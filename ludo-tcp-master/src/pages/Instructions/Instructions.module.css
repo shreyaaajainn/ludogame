@@ -1,0 +1,12 @@
+.Instructions {
+    text-align: left;
+    font-size: 10px;
+}
+
+.Instructions h1{
+    font-size: 15px;
+}
+
+li {
+    list-style: square;
+}

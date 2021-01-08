@@ -1,0 +1,29 @@
+.GameSet {
+    color: black;
+    padding: 1em;
+    background-color: gainsboro;
+    margin: auto;
+}
+.GameSet-players {
+    text-align: left;
+}
+.Player-List {
+    text-align: left;
+    list-style: none;
+}
+
+
+.GameSet-players-color {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 50%;
+};
+
+
+@media screen and (max-width: 1030px) {
+    .GameSet {
+        width: 100%;
+    }
+    
+}

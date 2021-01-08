@@ -1,0 +1,16 @@
+.Chat {
+    color: black;
+    padding: 4em;
+    background-color: gainsboro;
+}
+
+.Chat-Input {
+    display: flex;
+}
+
+article {
+    display: flex;
+}
+article div {
+    padding-right: 10px;
+}

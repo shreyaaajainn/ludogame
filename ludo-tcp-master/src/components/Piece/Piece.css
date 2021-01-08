@@ -1,0 +1,42 @@
+.Piece {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+.Piece-color:hover {
+  opacity: 0.5;
+}
+
+.Piece-color {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.Piece-color-animation {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 5px solid white;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:gray;}
+ 50%  {background-color:white;}
+ 100% {background-color:gray;}
+}
+
+.Piece-color-noHover {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 5px solid white;
+}

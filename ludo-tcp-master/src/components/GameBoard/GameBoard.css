@@ -1,0 +1,99 @@
+.GameBoard {
+    color: black;
+    height: 100%;
+    padding: 2em;
+    text-align: center;
+    margin: auto;
+}
+.GameBoard-Row1{
+    display: flex;
+    align-items: flex-end;
+}
+.GameBoard-Row3{
+    display: flex;
+    align-items: flex-start;
+}
+.GameBoard-Col {
+    width: 81px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.GameBoard-Row2 {
+    display: flex;
+    margin-left: -26px;
+}
+.GameBoard-Row2>.GameBoard-Col {
+    width: 162px;
+}
+.GameBoard-Col>div {
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+}
+.GameBoard-ColorHouse {
+    width: 135px;
+    height:135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GameBoard-Red {
+    border-top-left-radius: 25px
+}
+.GameBoard-Yellow {
+    border-top-right-radius: 25px;
+}
+.GameBoard-Green {
+    border-bottom-left-radius: 25px
+}
+.GameBoard-Blue {
+    border-bottom-right-radius: 25px
+}
+.yellow, .GameBoard-Yellow, #top {
+    background-color: #f0c830;
+}
+.green, .GameBoard-Green, #bottom {
+    background-color: #7d8e14;
+}
+.red, .GameBoard-Red, #left {
+    background-color: #b34121;
+}
+.blue, .GameBoard-Blue, #right {
+    background-color: #0152a8;
+}
+.House-Pieces {
+    width: 84px;
+    height: 84px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*---- Style center box ----*/
+.GameBoard-Center {
+    position: relative;
+    height: 81px;
+    width: 81px;
+    overflow: hidden;
+    transition: all 1s;
+}
+#top, #left, #right, #bottom {
+    border: 1px solid black;
+    position: absolute;
+    height: calc(100% / 1.414);
+    width: calc(100% / 1.414);
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+}
+#right {
+    transform: rotate(-45deg);
+}
+#bottom {
+    transform: rotate(45deg);
+}
+#top {
+    transform: rotate(-135deg);
+}
+#left {
+    transform: rotate(135deg);
+}
